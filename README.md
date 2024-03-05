@@ -1,1 +1,1 @@
-# ComputerCgraphicsLabs
+# ComputerGraphicsLabs
