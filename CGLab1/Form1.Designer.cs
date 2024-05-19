@@ -38,18 +38,39 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.tabPage_ColorSpacesConverter = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureBox_YUVPicture = new System.Windows.Forms.PictureBox();
+            this.pictureBox_OriginalRGBPicture = new System.Windows.Forms.PictureBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.button_YUVSave = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.button_YUVFind = new System.Windows.Forms.Button();
+            this.tabControl_YUVMatrix = new System.Windows.Forms.TabControl();
+            this.tabPage_Y = new System.Windows.Forms.TabPage();
+            this.dataGridView_YUV_Y = new System.Windows.Forms.DataGridView();
+            this.tabPage_U = new System.Windows.Forms.TabPage();
+            this.dataGridView_YUV_U = new System.Windows.Forms.DataGridView();
+            this.tabPage_V = new System.Windows.Forms.TabPage();
+            this.dataGridView_YUV_V = new System.Windows.Forms.DataGridView();
             this.tabPage_Shading = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.button_MakeShading = new System.Windows.Forms.Button();
             this.comboBox_BinarizationMethods = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.panel_ChangedImage_Shading = new System.Windows.Forms.Panel();
-            this.button_SaveImage_Shading = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel_InsertedImage_Shading = new System.Windows.Forms.Panel();
-            this.button_FindImage_Shading = new System.Windows.Forms.Button();
             this.tabControl_Shading = new System.Windows.Forms.TabControl();
             this.tabPage_WaveShading = new System.Windows.Forms.TabPage();
             this.dataGridView_WaveShading = new System.Windows.Forms.DataGridView();
@@ -60,18 +81,18 @@
             this.tabPage_CityShading = new System.Windows.Forms.TabPage();
             this.dataGridView_CityShading = new System.Windows.Forms.DataGridView();
             this.tabPage_View = new System.Windows.Forms.TabPage();
-            this.groupBox = new System.Windows.Forms.GroupBox();
-            this.panel_Changed_View = new System.Windows.Forms.Panel();
-            this.numericUpDown_Blue = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown_Green = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown_Red = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button_SaveImage_View = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.pictureBox_ChangedRgbViewPicture = new System.Windows.Forms.PictureBox();
+            this.pictureBox_OriginalRgbViewPicture = new System.Windows.Forms.PictureBox();
+            this.numericUpDown_RgbView_Blue = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown_RgbView_Green = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown_RgbView_Red = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel_InsertedImage = new System.Windows.Forms.Panel();
-            this.button_FindImage_View = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button_RgbViewSavePicture = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button_RgbViewFindPicture = new System.Windows.Forms.Button();
             this.tabControl_RGBViewer = new System.Windows.Forms.TabControl();
             this.tabPage_RedMatrix = new System.Windows.Forms.TabPage();
             this.dataGridView_Red = new System.Windows.Forms.DataGridView();
@@ -80,28 +101,37 @@
             this.tabPage_BlueMatrix = new System.Windows.Forms.TabPage();
             this.dataGridView_Blue = new System.Windows.Forms.DataGridView();
             this.tabControl_Main = new System.Windows.Forms.TabControl();
-            this.tabPage_ColorSpacesConverter = new System.Windows.Forms.TabPage();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.tabPage_Filtration = new System.Windows.Forms.TabPage();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.numericUpDown_FilterSize = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox_FilterChangedImage = new System.Windows.Forms.PictureBox();
+            this.pictureBox_FilterOriginalImage = new System.Windows.Forms.PictureBox();
+            this.button_FiltrationSaveImage = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.button_FiltrationFindImage = new System.Windows.Forms.Button();
+            this.button_UseFilter = new System.Windows.Forms.Button();
+            this.tabControl_Filtration = new System.Windows.Forms.TabControl();
+            this.tabPage_MedianFilter = new System.Windows.Forms.TabPage();
+            this.dataGridView_MedianFilterValues = new System.Windows.Forms.DataGridView();
+            this.tabPage_ColorSpacesConverter.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_YUVPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_OriginalRGBPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            this.tabControl_YUVMatrix.SuspendLayout();
+            this.tabPage_Y.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_YUV_Y)).BeginInit();
+            this.tabPage_U.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_YUV_U)).BeginInit();
+            this.tabPage_V.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_YUV_V)).BeginInit();
             this.tabPage_Shading.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabControl_Shading.SuspendLayout();
             this.tabPage_WaveShading.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_WaveShading)).BeginInit();
@@ -112,10 +142,12 @@
             this.tabPage_CityShading.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_CityShading)).BeginInit();
             this.tabPage_View.SuspendLayout();
-            this.groupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Blue)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Green)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Red)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ChangedRgbViewPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_OriginalRgbViewPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_RgbView_Blue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_RgbView_Green)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_RgbView_Red)).BeginInit();
             this.tabControl_RGBViewer.SuspendLayout();
             this.tabPage_RedMatrix.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Red)).BeginInit();
@@ -124,18 +156,14 @@
             this.tabPage_BlueMatrix.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Blue)).BeginInit();
             this.tabControl_Main.SuspendLayout();
-            this.tabPage_ColorSpacesConverter.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            this.tabControl1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.tabPage_Filtration.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_FilterSize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_FilterChangedImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_FilterOriginalImage)).BeginInit();
+            this.tabControl_Filtration.SuspendLayout();
+            this.tabPage_MedianFilter.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_MedianFilterValues)).BeginInit();
             this.SuspendLayout();
             // 
             // openFileDialog
@@ -147,44 +175,377 @@
             this.saveFileDialog.DefaultExt = "bmp";
             this.saveFileDialog.Filter = "\"Bitmap Image (.bmp)|*.bmp|All files (*.*)|*.*\"";
             // 
+            // tabPage_ColorSpacesConverter
+            // 
+            this.tabPage_ColorSpacesConverter.Controls.Add(this.groupBox2);
+            this.tabPage_ColorSpacesConverter.Controls.Add(this.tabControl_YUVMatrix);
+            this.tabPage_ColorSpacesConverter.Location = new System.Drawing.Point(4, 29);
+            this.tabPage_ColorSpacesConverter.Name = "tabPage_ColorSpacesConverter";
+            this.tabPage_ColorSpacesConverter.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_ColorSpacesConverter.Size = new System.Drawing.Size(923, 689);
+            this.tabPage_ColorSpacesConverter.TabIndex = 3;
+            this.tabPage_ColorSpacesConverter.Text = "Преобразование";
+            this.tabPage_ColorSpacesConverter.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.pictureBox_YUVPicture);
+            this.groupBox2.Controls.Add(this.pictureBox_OriginalRGBPicture);
+            this.groupBox2.Controls.Add(this.numericUpDown1);
+            this.groupBox2.Controls.Add(this.numericUpDown2);
+            this.groupBox2.Controls.Add(this.numericUpDown3);
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.label9);
+            this.groupBox2.Controls.Add(this.button_YUVSave);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.button_YUVFind);
+            this.groupBox2.Location = new System.Drawing.Point(6, 6);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(230, 662);
+            this.groupBox2.TabIndex = 39;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Превью:";
+            // 
+            // pictureBox_YUVPicture
+            // 
+            this.pictureBox_YUVPicture.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBox_YUVPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox_YUVPicture.Location = new System.Drawing.Point(6, 345);
+            this.pictureBox_YUVPicture.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox_YUVPicture.Name = "pictureBox_YUVPicture";
+            this.pictureBox_YUVPicture.Size = new System.Drawing.Size(215, 215);
+            this.pictureBox_YUVPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_YUVPicture.TabIndex = 40;
+            this.pictureBox_YUVPicture.TabStop = false;
+            this.pictureBox_YUVPicture.Click += new System.EventHandler(this.pictureBox_YUVPicture_Click);
+            // 
+            // pictureBox_OriginalRGBPicture
+            // 
+            this.pictureBox_OriginalRGBPicture.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBox_OriginalRGBPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox_OriginalRGBPicture.Location = new System.Drawing.Point(6, 46);
+            this.pictureBox_OriginalRGBPicture.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox_OriginalRGBPicture.Name = "pictureBox_OriginalRGBPicture";
+            this.pictureBox_OriginalRGBPicture.Size = new System.Drawing.Size(215, 215);
+            this.pictureBox_OriginalRGBPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_OriginalRGBPicture.TabIndex = 39;
+            this.pictureBox_OriginalRGBPicture.TabStop = false;
+            this.pictureBox_OriginalRGBPicture.Click += new System.EventHandler(this.pictureBox_OriginalRGBPicture_Click);
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(92, 629);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(114, 26);
+            this.numericUpDown1.TabIndex = 38;
+            this.numericUpDown1.Visible = false;
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Location = new System.Drawing.Point(92, 597);
+            this.numericUpDown2.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(114, 26);
+            this.numericUpDown2.TabIndex = 37;
+            this.numericUpDown2.Visible = false;
+            // 
+            // numericUpDown3
+            // 
+            this.numericUpDown3.Location = new System.Drawing.Point(92, 565);
+            this.numericUpDown3.Maximum = new decimal(new int[] {
+            255,
+            0,
+            0,
+            0});
+            this.numericUpDown3.Name = "numericUpDown3";
+            this.numericUpDown3.Size = new System.Drawing.Size(114, 26);
+            this.numericUpDown3.TabIndex = 36;
+            this.numericUpDown3.Visible = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 631);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(60, 20);
+            this.label6.TabIndex = 35;
+            this.label6.Text = "Синий:";
+            this.label6.Visible = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(4, 597);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(81, 20);
+            this.label7.TabIndex = 34;
+            this.label7.Text = "Зеленый:";
+            this.label7.Visible = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 565);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(78, 20);
+            this.label9.TabIndex = 33;
+            this.label9.Text = "Красный:";
+            this.label9.Visible = false;
+            // 
+            // button_YUVSave
+            // 
+            this.button_YUVSave.Location = new System.Drawing.Point(6, 306);
+            this.button_YUVSave.Name = "button_YUVSave";
+            this.button_YUVSave.Size = new System.Drawing.Size(105, 31);
+            this.button_YUVSave.TabIndex = 32;
+            this.button_YUVSave.Text = "Сохранить";
+            this.button_YUVSave.UseVisualStyleBackColor = true;
+            this.button_YUVSave.Click += new System.EventHandler(this.button_YUVSave_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 22);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(190, 20);
+            this.label10.TabIndex = 30;
+            this.label10.Text = "Исходное изображение:";
+            // 
+            // button_YUVFind
+            // 
+            this.button_YUVFind.Location = new System.Drawing.Point(6, 269);
+            this.button_YUVFind.Name = "button_YUVFind";
+            this.button_YUVFind.Size = new System.Drawing.Size(105, 31);
+            this.button_YUVFind.TabIndex = 31;
+            this.button_YUVFind.Text = "Найти";
+            this.button_YUVFind.UseVisualStyleBackColor = true;
+            this.button_YUVFind.Click += new System.EventHandler(this.button_YUVFind_Click);
+            // 
+            // tabControl_YUVMatrix
+            // 
+            this.tabControl_YUVMatrix.Controls.Add(this.tabPage_Y);
+            this.tabControl_YUVMatrix.Controls.Add(this.tabPage_U);
+            this.tabControl_YUVMatrix.Controls.Add(this.tabPage_V);
+            this.tabControl_YUVMatrix.Location = new System.Drawing.Point(242, 6);
+            this.tabControl_YUVMatrix.Name = "tabControl_YUVMatrix";
+            this.tabControl_YUVMatrix.SelectedIndex = 0;
+            this.tabControl_YUVMatrix.Size = new System.Drawing.Size(662, 672);
+            this.tabControl_YUVMatrix.TabIndex = 41;
+            // 
+            // tabPage_Y
+            // 
+            this.tabPage_Y.Controls.Add(this.dataGridView_YUV_Y);
+            this.tabPage_Y.Location = new System.Drawing.Point(4, 29);
+            this.tabPage_Y.Name = "tabPage_Y";
+            this.tabPage_Y.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_Y.Size = new System.Drawing.Size(654, 639);
+            this.tabPage_Y.TabIndex = 0;
+            this.tabPage_Y.Text = "Яркость Y";
+            this.tabPage_Y.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView_YUV_Y
+            // 
+            this.dataGridView_YUV_Y.AllowUserToAddRows = false;
+            this.dataGridView_YUV_Y.AllowUserToDeleteRows = false;
+            this.dataGridView_YUV_Y.AllowUserToResizeColumns = false;
+            this.dataGridView_YUV_Y.AllowUserToResizeRows = false;
+            this.dataGridView_YUV_Y.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView_YUV_Y.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView_YUV_Y.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView_YUV_Y.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_YUV_Y.ColumnHeadersVisible = false;
+            this.dataGridView_YUV_Y.Cursor = System.Windows.Forms.Cursors.Arrow;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_YUV_Y.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView_YUV_Y.Location = new System.Drawing.Point(6, 6);
+            this.dataGridView_YUV_Y.Name = "dataGridView_YUV_Y";
+            this.dataGridView_YUV_Y.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dataGridView_YUV_Y.RowHeadersVisible = false;
+            this.dataGridView_YUV_Y.RowHeadersWidth = 62;
+            this.dataGridView_YUV_Y.RowTemplate.Height = 28;
+            this.dataGridView_YUV_Y.Size = new System.Drawing.Size(638, 626);
+            this.dataGridView_YUV_Y.TabIndex = 40;
+            // 
+            // tabPage_U
+            // 
+            this.tabPage_U.Controls.Add(this.dataGridView_YUV_U);
+            this.tabPage_U.Location = new System.Drawing.Point(4, 29);
+            this.tabPage_U.Name = "tabPage_U";
+            this.tabPage_U.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_U.Size = new System.Drawing.Size(654, 639);
+            this.tabPage_U.TabIndex = 1;
+            this.tabPage_U.Text = "Разность с синим U";
+            this.tabPage_U.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView_YUV_U
+            // 
+            this.dataGridView_YUV_U.AllowUserToAddRows = false;
+            this.dataGridView_YUV_U.AllowUserToDeleteRows = false;
+            this.dataGridView_YUV_U.AllowUserToResizeColumns = false;
+            this.dataGridView_YUV_U.AllowUserToResizeRows = false;
+            this.dataGridView_YUV_U.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView_YUV_U.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView_YUV_U.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView_YUV_U.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_YUV_U.ColumnHeadersVisible = false;
+            this.dataGridView_YUV_U.Cursor = System.Windows.Forms.Cursors.Arrow;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_YUV_U.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView_YUV_U.Location = new System.Drawing.Point(8, 6);
+            this.dataGridView_YUV_U.Name = "dataGridView_YUV_U";
+            this.dataGridView_YUV_U.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dataGridView_YUV_U.RowHeadersVisible = false;
+            this.dataGridView_YUV_U.RowHeadersWidth = 62;
+            this.dataGridView_YUV_U.RowTemplate.Height = 28;
+            this.dataGridView_YUV_U.Size = new System.Drawing.Size(638, 626);
+            this.dataGridView_YUV_U.TabIndex = 41;
+            // 
+            // tabPage_V
+            // 
+            this.tabPage_V.Controls.Add(this.dataGridView_YUV_V);
+            this.tabPage_V.Location = new System.Drawing.Point(4, 29);
+            this.tabPage_V.Name = "tabPage_V";
+            this.tabPage_V.Size = new System.Drawing.Size(654, 639);
+            this.tabPage_V.TabIndex = 2;
+            this.tabPage_V.Text = "Разность с красным V";
+            this.tabPage_V.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView_YUV_V
+            // 
+            this.dataGridView_YUV_V.AllowUserToAddRows = false;
+            this.dataGridView_YUV_V.AllowUserToDeleteRows = false;
+            this.dataGridView_YUV_V.AllowUserToResizeColumns = false;
+            this.dataGridView_YUV_V.AllowUserToResizeRows = false;
+            this.dataGridView_YUV_V.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView_YUV_V.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView_YUV_V.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView_YUV_V.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_YUV_V.ColumnHeadersVisible = false;
+            this.dataGridView_YUV_V.Cursor = System.Windows.Forms.Cursors.Arrow;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_YUV_V.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView_YUV_V.Location = new System.Drawing.Point(8, 6);
+            this.dataGridView_YUV_V.Name = "dataGridView_YUV_V";
+            this.dataGridView_YUV_V.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dataGridView_YUV_V.RowHeadersVisible = false;
+            this.dataGridView_YUV_V.RowHeadersWidth = 62;
+            this.dataGridView_YUV_V.RowTemplate.Height = 28;
+            this.dataGridView_YUV_V.Size = new System.Drawing.Size(638, 626);
+            this.dataGridView_YUV_V.TabIndex = 41;
+            // 
             // tabPage_Shading
             // 
             this.tabPage_Shading.Controls.Add(this.groupBox1);
             this.tabPage_Shading.Controls.Add(this.tabControl_Shading);
-            this.tabPage_Shading.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_Shading.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage_Shading.Location = new System.Drawing.Point(4, 29);
             this.tabPage_Shading.Name = "tabPage_Shading";
-            this.tabPage_Shading.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage_Shading.Size = new System.Drawing.Size(610, 443);
+            this.tabPage_Shading.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_Shading.Size = new System.Drawing.Size(923, 689);
             this.tabPage_Shading.TabIndex = 1;
             this.tabPage_Shading.Text = "Растушевка";
             this.tabPage_Shading.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.pictureBox2);
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button_MakeShading);
             this.groupBox1.Controls.Add(this.comboBox_BinarizationMethods);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.panel_ChangedImage_Shading);
-            this.groupBox1.Controls.Add(this.button_SaveImage_Shading);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.panel_InsertedImage_Shading);
-            this.groupBox1.Controls.Add(this.button_FindImage_Shading);
-            this.groupBox1.Location = new System.Drawing.Point(7, 5);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(3, 8);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(141, 430);
+            this.groupBox1.Size = new System.Drawing.Size(230, 662);
             this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Превью:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 345);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(215, 215);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 45;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox2.Location = new System.Drawing.Point(6, 46);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(215, 215);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 44;
+            this.pictureBox2.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(6, 306);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(105, 31);
+            this.button1.TabIndex = 43;
+            this.button1.Text = "Сохранить";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 22);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(190, 20);
+            this.label8.TabIndex = 41;
+            this.label8.Text = "Исходное изображение:";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(6, 269);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(105, 31);
+            this.button2.TabIndex = 42;
+            this.button2.Text = "Найти";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // button_MakeShading
             // 
-            this.button_MakeShading.Location = new System.Drawing.Point(4, 404);
-            this.button_MakeShading.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_MakeShading.Location = new System.Drawing.Point(6, 622);
             this.button_MakeShading.Name = "button_MakeShading";
-            this.button_MakeShading.Size = new System.Drawing.Size(133, 22);
+            this.button_MakeShading.Size = new System.Drawing.Size(215, 34);
             this.button_MakeShading.TabIndex = 35;
             this.button_MakeShading.Text = "Растушевать";
             this.button_MakeShading.UseVisualStyleBackColor = true;
@@ -198,73 +559,19 @@
             "Метод 120",
             "Метод Мод",
             "Метод 40%"});
-            this.comboBox_BinarizationMethods.Location = new System.Drawing.Point(4, 372);
-            this.comboBox_BinarizationMethods.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox_BinarizationMethods.Location = new System.Drawing.Point(6, 588);
             this.comboBox_BinarizationMethods.Name = "comboBox_BinarizationMethods";
-            this.comboBox_BinarizationMethods.Size = new System.Drawing.Size(134, 21);
+            this.comboBox_BinarizationMethods.Size = new System.Drawing.Size(215, 28);
             this.comboBox_BinarizationMethods.TabIndex = 34;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(5, 357);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(6, 565);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(105, 13);
+            this.label5.Size = new System.Drawing.Size(158, 20);
             this.label5.TabIndex = 33;
             this.label5.Text = "Метод растушевки:";
-            // 
-            // panel_ChangedImage_Shading
-            // 
-            this.panel_ChangedImage_Shading.AllowDrop = true;
-            this.panel_ChangedImage_Shading.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel_ChangedImage_Shading.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel_ChangedImage_Shading.Location = new System.Drawing.Point(4, 223);
-            this.panel_ChangedImage_Shading.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel_ChangedImage_Shading.Name = "panel_ChangedImage_Shading";
-            this.panel_ChangedImage_Shading.Size = new System.Drawing.Size(133, 129);
-            this.panel_ChangedImage_Shading.TabIndex = 30;
-            // 
-            // button_SaveImage_Shading
-            // 
-            this.button_SaveImage_Shading.Location = new System.Drawing.Point(4, 192);
-            this.button_SaveImage_Shading.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button_SaveImage_Shading.Name = "button_SaveImage_Shading";
-            this.button_SaveImage_Shading.Size = new System.Drawing.Size(70, 20);
-            this.button_SaveImage_Shading.TabIndex = 32;
-            this.button_SaveImage_Shading.Text = "Сохранить";
-            this.button_SaveImage_Shading.UseVisualStyleBackColor = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(4, 14);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(130, 13);
-            this.label8.TabIndex = 30;
-            this.label8.Text = "Исходное изображение:";
-            // 
-            // panel_InsertedImage_Shading
-            // 
-            this.panel_InsertedImage_Shading.AllowDrop = true;
-            this.panel_InsertedImage_Shading.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel_InsertedImage_Shading.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel_InsertedImage_Shading.Location = new System.Drawing.Point(4, 35);
-            this.panel_InsertedImage_Shading.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel_InsertedImage_Shading.Name = "panel_InsertedImage_Shading";
-            this.panel_InsertedImage_Shading.Size = new System.Drawing.Size(133, 129);
-            this.panel_InsertedImage_Shading.TabIndex = 29;
-            // 
-            // button_FindImage_Shading
-            // 
-            this.button_FindImage_Shading.Location = new System.Drawing.Point(4, 168);
-            this.button_FindImage_Shading.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button_FindImage_Shading.Name = "button_FindImage_Shading";
-            this.button_FindImage_Shading.Size = new System.Drawing.Size(70, 20);
-            this.button_FindImage_Shading.TabIndex = 31;
-            this.button_FindImage_Shading.Text = "Найти";
-            this.button_FindImage_Shading.UseVisualStyleBackColor = true;
             // 
             // tabControl_Shading
             // 
@@ -272,21 +579,19 @@
             this.tabControl_Shading.Controls.Add(this.tabPage_EuclidShading);
             this.tabControl_Shading.Controls.Add(this.tabPage_ChessShading);
             this.tabControl_Shading.Controls.Add(this.tabPage_CityShading);
-            this.tabControl_Shading.Location = new System.Drawing.Point(165, 5);
-            this.tabControl_Shading.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl_Shading.Location = new System.Drawing.Point(239, 8);
             this.tabControl_Shading.Name = "tabControl_Shading";
             this.tabControl_Shading.SelectedIndex = 0;
-            this.tabControl_Shading.Size = new System.Drawing.Size(441, 437);
+            this.tabControl_Shading.Size = new System.Drawing.Size(671, 672);
             this.tabControl_Shading.TabIndex = 43;
             // 
             // tabPage_WaveShading
             // 
             this.tabPage_WaveShading.Controls.Add(this.dataGridView_WaveShading);
-            this.tabPage_WaveShading.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_WaveShading.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage_WaveShading.Location = new System.Drawing.Point(4, 29);
             this.tabPage_WaveShading.Name = "tabPage_WaveShading";
-            this.tabPage_WaveShading.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage_WaveShading.Size = new System.Drawing.Size(433, 411);
+            this.tabPage_WaveShading.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_WaveShading.Size = new System.Drawing.Size(663, 639);
             this.tabPage_WaveShading.TabIndex = 0;
             this.tabPage_WaveShading.Text = "n-Волновая";
             this.tabPage_WaveShading.UseVisualStyleBackColor = true;
@@ -303,32 +608,30 @@
             this.dataGridView_WaveShading.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_WaveShading.ColumnHeadersVisible = false;
             this.dataGridView_WaveShading.Cursor = System.Windows.Forms.Cursors.Arrow;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_WaveShading.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView_WaveShading.Location = new System.Drawing.Point(4, 4);
-            this.dataGridView_WaveShading.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_WaveShading.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView_WaveShading.Location = new System.Drawing.Point(6, 6);
             this.dataGridView_WaveShading.Name = "dataGridView_WaveShading";
             this.dataGridView_WaveShading.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView_WaveShading.RowHeadersVisible = false;
             this.dataGridView_WaveShading.RowHeadersWidth = 62;
             this.dataGridView_WaveShading.RowTemplate.Height = 28;
-            this.dataGridView_WaveShading.Size = new System.Drawing.Size(425, 407);
+            this.dataGridView_WaveShading.Size = new System.Drawing.Size(638, 626);
             this.dataGridView_WaveShading.TabIndex = 40;
             // 
             // tabPage_EuclidShading
             // 
             this.tabPage_EuclidShading.Controls.Add(this.dataGridView_EuclidShading);
-            this.tabPage_EuclidShading.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_EuclidShading.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage_EuclidShading.Location = new System.Drawing.Point(4, 29);
             this.tabPage_EuclidShading.Name = "tabPage_EuclidShading";
-            this.tabPage_EuclidShading.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage_EuclidShading.Size = new System.Drawing.Size(433, 411);
+            this.tabPage_EuclidShading.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_EuclidShading.Size = new System.Drawing.Size(663, 639);
             this.tabPage_EuclidShading.TabIndex = 1;
             this.tabPage_EuclidShading.Text = "Евклидово рст.";
             this.tabPage_EuclidShading.UseVisualStyleBackColor = true;
@@ -347,18 +650,17 @@
             this.dataGridView_EuclidShading.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView_EuclidShading.ColumnHeadersVisible = false;
             this.dataGridView_EuclidShading.Cursor = System.Windows.Forms.Cursors.Arrow;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.Format = "N2";
-            dataGridViewCellStyle2.NullValue = null;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_EuclidShading.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView_EuclidShading.Location = new System.Drawing.Point(5, 4);
-            this.dataGridView_EuclidShading.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.Format = "N2";
+            dataGridViewCellStyle5.NullValue = null;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_EuclidShading.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView_EuclidShading.Location = new System.Drawing.Point(8, 6);
             this.dataGridView_EuclidShading.MultiSelect = false;
             this.dataGridView_EuclidShading.Name = "dataGridView_EuclidShading";
             this.dataGridView_EuclidShading.ReadOnly = true;
@@ -366,16 +668,15 @@
             this.dataGridView_EuclidShading.RowHeadersVisible = false;
             this.dataGridView_EuclidShading.RowHeadersWidth = 62;
             this.dataGridView_EuclidShading.RowTemplate.Height = 28;
-            this.dataGridView_EuclidShading.Size = new System.Drawing.Size(425, 407);
+            this.dataGridView_EuclidShading.Size = new System.Drawing.Size(638, 626);
             this.dataGridView_EuclidShading.TabIndex = 41;
             // 
             // tabPage_ChessShading
             // 
             this.tabPage_ChessShading.Controls.Add(this.dataGridView_ChessShading);
-            this.tabPage_ChessShading.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_ChessShading.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage_ChessShading.Location = new System.Drawing.Point(4, 29);
             this.tabPage_ChessShading.Name = "tabPage_ChessShading";
-            this.tabPage_ChessShading.Size = new System.Drawing.Size(433, 411);
+            this.tabPage_ChessShading.Size = new System.Drawing.Size(663, 639);
             this.tabPage_ChessShading.TabIndex = 2;
             this.tabPage_ChessShading.Text = "Шахматное рст.";
             this.tabPage_ChessShading.UseVisualStyleBackColor = true;
@@ -392,31 +693,29 @@
             this.dataGridView_ChessShading.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_ChessShading.ColumnHeadersVisible = false;
             this.dataGridView_ChessShading.Cursor = System.Windows.Forms.Cursors.Arrow;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_ChessShading.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView_ChessShading.Location = new System.Drawing.Point(5, 4);
-            this.dataGridView_ChessShading.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_ChessShading.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridView_ChessShading.Location = new System.Drawing.Point(8, 6);
             this.dataGridView_ChessShading.Name = "dataGridView_ChessShading";
             this.dataGridView_ChessShading.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView_ChessShading.RowHeadersVisible = false;
             this.dataGridView_ChessShading.RowHeadersWidth = 62;
             this.dataGridView_ChessShading.RowTemplate.Height = 28;
-            this.dataGridView_ChessShading.Size = new System.Drawing.Size(425, 407);
+            this.dataGridView_ChessShading.Size = new System.Drawing.Size(638, 626);
             this.dataGridView_ChessShading.TabIndex = 41;
             // 
             // tabPage_CityShading
             // 
             this.tabPage_CityShading.Controls.Add(this.dataGridView_CityShading);
-            this.tabPage_CityShading.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_CityShading.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage_CityShading.Location = new System.Drawing.Point(4, 29);
             this.tabPage_CityShading.Name = "tabPage_CityShading";
-            this.tabPage_CityShading.Size = new System.Drawing.Size(433, 411);
+            this.tabPage_CityShading.Size = new System.Drawing.Size(663, 639);
             this.tabPage_CityShading.TabIndex = 3;
             this.tabPage_CityShading.Text = "Городское рст.";
             this.tabPage_CityShading.UseVisualStyleBackColor = true;
@@ -433,200 +732,195 @@
             this.dataGridView_CityShading.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_CityShading.ColumnHeadersVisible = false;
             this.dataGridView_CityShading.Cursor = System.Windows.Forms.Cursors.Arrow;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_CityShading.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView_CityShading.Location = new System.Drawing.Point(5, 4);
-            this.dataGridView_CityShading.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_CityShading.DefaultCellStyle = dataGridViewCellStyle7;
+            this.dataGridView_CityShading.Location = new System.Drawing.Point(8, 6);
             this.dataGridView_CityShading.Name = "dataGridView_CityShading";
             this.dataGridView_CityShading.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView_CityShading.RowHeadersVisible = false;
             this.dataGridView_CityShading.RowHeadersWidth = 62;
             this.dataGridView_CityShading.RowTemplate.Height = 28;
-            this.dataGridView_CityShading.Size = new System.Drawing.Size(425, 407);
+            this.dataGridView_CityShading.Size = new System.Drawing.Size(638, 626);
             this.dataGridView_CityShading.TabIndex = 42;
             // 
             // tabPage_View
             // 
-            this.tabPage_View.Controls.Add(this.groupBox);
+            this.tabPage_View.Controls.Add(this.groupBox3);
             this.tabPage_View.Controls.Add(this.tabControl_RGBViewer);
-            this.tabPage_View.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_View.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage_View.Location = new System.Drawing.Point(4, 29);
             this.tabPage_View.Name = "tabPage_View";
-            this.tabPage_View.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage_View.Size = new System.Drawing.Size(610, 443);
+            this.tabPage_View.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_View.Size = new System.Drawing.Size(923, 689);
             this.tabPage_View.TabIndex = 0;
             this.tabPage_View.Text = "Просмотр";
             this.tabPage_View.UseVisualStyleBackColor = true;
             // 
-            // groupBox
+            // groupBox3
             // 
-            this.groupBox.Controls.Add(this.panel_Changed_View);
-            this.groupBox.Controls.Add(this.numericUpDown_Blue);
-            this.groupBox.Controls.Add(this.numericUpDown_Green);
-            this.groupBox.Controls.Add(this.numericUpDown_Red);
-            this.groupBox.Controls.Add(this.label4);
-            this.groupBox.Controls.Add(this.label3);
-            this.groupBox.Controls.Add(this.label2);
-            this.groupBox.Controls.Add(this.button_SaveImage_View);
-            this.groupBox.Controls.Add(this.label1);
-            this.groupBox.Controls.Add(this.panel_InsertedImage);
-            this.groupBox.Controls.Add(this.button_FindImage_View);
-            this.groupBox.Location = new System.Drawing.Point(4, 4);
-            this.groupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox.Name = "groupBox";
-            this.groupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox.Size = new System.Drawing.Size(141, 430);
-            this.groupBox.TabIndex = 39;
-            this.groupBox.TabStop = false;
-            this.groupBox.Text = "Превью:";
+            this.groupBox3.Controls.Add(this.pictureBox_ChangedRgbViewPicture);
+            this.groupBox3.Controls.Add(this.pictureBox_OriginalRgbViewPicture);
+            this.groupBox3.Controls.Add(this.numericUpDown_RgbView_Blue);
+            this.groupBox3.Controls.Add(this.numericUpDown_RgbView_Green);
+            this.groupBox3.Controls.Add(this.numericUpDown_RgbView_Red);
+            this.groupBox3.Controls.Add(this.label1);
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Controls.Add(this.button_RgbViewSavePicture);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.button_RgbViewFindPicture);
+            this.groupBox3.Location = new System.Drawing.Point(3, 6);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(230, 662);
+            this.groupBox3.TabIndex = 42;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Превью:";
             // 
-            // panel_Changed_View
+            // pictureBox_ChangedRgbViewPicture
             // 
-            this.panel_Changed_View.AllowDrop = true;
-            this.panel_Changed_View.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel_Changed_View.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel_Changed_View.Location = new System.Drawing.Point(4, 223);
-            this.panel_Changed_View.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel_Changed_View.Name = "panel_Changed_View";
-            this.panel_Changed_View.Size = new System.Drawing.Size(133, 129);
-            this.panel_Changed_View.TabIndex = 30;
+            this.pictureBox_ChangedRgbViewPicture.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBox_ChangedRgbViewPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox_ChangedRgbViewPicture.Location = new System.Drawing.Point(6, 345);
+            this.pictureBox_ChangedRgbViewPicture.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox_ChangedRgbViewPicture.Name = "pictureBox_ChangedRgbViewPicture";
+            this.pictureBox_ChangedRgbViewPicture.Size = new System.Drawing.Size(215, 215);
+            this.pictureBox_ChangedRgbViewPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_ChangedRgbViewPicture.TabIndex = 40;
+            this.pictureBox_ChangedRgbViewPicture.TabStop = false;
+            this.pictureBox_ChangedRgbViewPicture.Click += new System.EventHandler(this.pictureBox_ChangedRgbViewPicture_Click);
             // 
-            // numericUpDown_Blue
+            // pictureBox_OriginalRgbViewPicture
             // 
-            this.numericUpDown_Blue.Location = new System.Drawing.Point(61, 409);
-            this.numericUpDown_Blue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.numericUpDown_Blue.Maximum = new decimal(new int[] {
+            this.pictureBox_OriginalRgbViewPicture.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBox_OriginalRgbViewPicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox_OriginalRgbViewPicture.Location = new System.Drawing.Point(6, 46);
+            this.pictureBox_OriginalRgbViewPicture.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox_OriginalRgbViewPicture.Name = "pictureBox_OriginalRgbViewPicture";
+            this.pictureBox_OriginalRgbViewPicture.Size = new System.Drawing.Size(215, 215);
+            this.pictureBox_OriginalRgbViewPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_OriginalRgbViewPicture.TabIndex = 39;
+            this.pictureBox_OriginalRgbViewPicture.TabStop = false;
+            this.pictureBox_OriginalRgbViewPicture.Click += new System.EventHandler(this.pictureBox_OriginalRgbViewPicture_Click);
+            // 
+            // numericUpDown_RgbView_Blue
+            // 
+            this.numericUpDown_RgbView_Blue.Location = new System.Drawing.Point(92, 629);
+            this.numericUpDown_RgbView_Blue.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDown_Blue.Name = "numericUpDown_Blue";
-            this.numericUpDown_Blue.Size = new System.Drawing.Size(76, 20);
-            this.numericUpDown_Blue.TabIndex = 38;
+            this.numericUpDown_RgbView_Blue.Name = "numericUpDown_RgbView_Blue";
+            this.numericUpDown_RgbView_Blue.Size = new System.Drawing.Size(129, 26);
+            this.numericUpDown_RgbView_Blue.TabIndex = 38;
+            this.numericUpDown_RgbView_Blue.ValueChanged += new System.EventHandler(this.NumericUpDown_valueChanged);
             // 
-            // numericUpDown_Green
+            // numericUpDown_RgbView_Green
             // 
-            this.numericUpDown_Green.Location = new System.Drawing.Point(61, 388);
-            this.numericUpDown_Green.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.numericUpDown_Green.Maximum = new decimal(new int[] {
+            this.numericUpDown_RgbView_Green.Location = new System.Drawing.Point(92, 597);
+            this.numericUpDown_RgbView_Green.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDown_Green.Name = "numericUpDown_Green";
-            this.numericUpDown_Green.Size = new System.Drawing.Size(76, 20);
-            this.numericUpDown_Green.TabIndex = 37;
+            this.numericUpDown_RgbView_Green.Name = "numericUpDown_RgbView_Green";
+            this.numericUpDown_RgbView_Green.Size = new System.Drawing.Size(129, 26);
+            this.numericUpDown_RgbView_Green.TabIndex = 37;
+            this.numericUpDown_RgbView_Green.ValueChanged += new System.EventHandler(this.NumericUpDown_valueChanged);
             // 
-            // numericUpDown_Red
+            // numericUpDown_RgbView_Red
             // 
-            this.numericUpDown_Red.Location = new System.Drawing.Point(61, 367);
-            this.numericUpDown_Red.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.numericUpDown_Red.Maximum = new decimal(new int[] {
+            this.numericUpDown_RgbView_Red.Location = new System.Drawing.Point(92, 565);
+            this.numericUpDown_RgbView_Red.Maximum = new decimal(new int[] {
             255,
             0,
             0,
             0});
-            this.numericUpDown_Red.Name = "numericUpDown_Red";
-            this.numericUpDown_Red.Size = new System.Drawing.Size(76, 20);
-            this.numericUpDown_Red.TabIndex = 36;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(4, 410);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 13);
-            this.label4.TabIndex = 35;
-            this.label4.Text = "Синий:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 388);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
-            this.label3.TabIndex = 34;
-            this.label3.Text = "Зеленый:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(4, 367);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
-            this.label2.TabIndex = 33;
-            this.label2.Text = "Красный:";
-            // 
-            // button_SaveImage_View
-            // 
-            this.button_SaveImage_View.Location = new System.Drawing.Point(4, 192);
-            this.button_SaveImage_View.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button_SaveImage_View.Name = "button_SaveImage_View";
-            this.button_SaveImage_View.Size = new System.Drawing.Size(70, 20);
-            this.button_SaveImage_View.TabIndex = 32;
-            this.button_SaveImage_View.Text = "Сохранить";
-            this.button_SaveImage_View.UseVisualStyleBackColor = true;
+            this.numericUpDown_RgbView_Red.Name = "numericUpDown_RgbView_Red";
+            this.numericUpDown_RgbView_Red.Size = new System.Drawing.Size(129, 26);
+            this.numericUpDown_RgbView_Red.TabIndex = 36;
+            this.numericUpDown_RgbView_Red.ValueChanged += new System.EventHandler(this.NumericUpDown_valueChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(4, 14);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(6, 631);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 13);
-            this.label1.TabIndex = 30;
-            this.label1.Text = "Исходное изображение:";
+            this.label1.Size = new System.Drawing.Size(60, 20);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "Синий:";
             // 
-            // panel_InsertedImage
+            // label2
             // 
-            this.panel_InsertedImage.AllowDrop = true;
-            this.panel_InsertedImage.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel_InsertedImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel_InsertedImage.Location = new System.Drawing.Point(4, 35);
-            this.panel_InsertedImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel_InsertedImage.Name = "panel_InsertedImage";
-            this.panel_InsertedImage.Size = new System.Drawing.Size(133, 129);
-            this.panel_InsertedImage.TabIndex = 29;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(4, 597);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(81, 20);
+            this.label2.TabIndex = 34;
+            this.label2.Text = "Зеленый:";
             // 
-            // button_FindImage_View
+            // label3
             // 
-            this.button_FindImage_View.Location = new System.Drawing.Point(4, 168);
-            this.button_FindImage_View.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button_FindImage_View.Name = "button_FindImage_View";
-            this.button_FindImage_View.Size = new System.Drawing.Size(70, 20);
-            this.button_FindImage_View.TabIndex = 31;
-            this.button_FindImage_View.Text = "Найти";
-            this.button_FindImage_View.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 565);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(78, 20);
+            this.label3.TabIndex = 33;
+            this.label3.Text = "Красный:";
+            // 
+            // button_RgbViewSavePicture
+            // 
+            this.button_RgbViewSavePicture.Location = new System.Drawing.Point(6, 306);
+            this.button_RgbViewSavePicture.Name = "button_RgbViewSavePicture";
+            this.button_RgbViewSavePicture.Size = new System.Drawing.Size(105, 31);
+            this.button_RgbViewSavePicture.TabIndex = 32;
+            this.button_RgbViewSavePicture.Text = "Сохранить";
+            this.button_RgbViewSavePicture.UseVisualStyleBackColor = true;
+            this.button_RgbViewSavePicture.Click += new System.EventHandler(this.button_RgbViewSavePicture_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 22);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(190, 20);
+            this.label4.TabIndex = 30;
+            this.label4.Text = "Исходное изображение:";
+            // 
+            // button_RgbViewFindPicture
+            // 
+            this.button_RgbViewFindPicture.Location = new System.Drawing.Point(6, 269);
+            this.button_RgbViewFindPicture.Name = "button_RgbViewFindPicture";
+            this.button_RgbViewFindPicture.Size = new System.Drawing.Size(105, 31);
+            this.button_RgbViewFindPicture.TabIndex = 31;
+            this.button_RgbViewFindPicture.Text = "Найти";
+            this.button_RgbViewFindPicture.UseVisualStyleBackColor = true;
+            this.button_RgbViewFindPicture.Click += new System.EventHandler(this.button_RgbViewFindPicture_Click);
             // 
             // tabControl_RGBViewer
             // 
             this.tabControl_RGBViewer.Controls.Add(this.tabPage_RedMatrix);
             this.tabControl_RGBViewer.Controls.Add(this.tabPage_GreenMatrix);
             this.tabControl_RGBViewer.Controls.Add(this.tabPage_BlueMatrix);
-            this.tabControl_RGBViewer.Location = new System.Drawing.Point(161, 4);
-            this.tabControl_RGBViewer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl_RGBViewer.Location = new System.Drawing.Point(242, 6);
             this.tabControl_RGBViewer.Name = "tabControl_RGBViewer";
             this.tabControl_RGBViewer.SelectedIndex = 0;
-            this.tabControl_RGBViewer.Size = new System.Drawing.Size(441, 437);
+            this.tabControl_RGBViewer.Size = new System.Drawing.Size(662, 672);
             this.tabControl_RGBViewer.TabIndex = 41;
+            this.tabControl_RGBViewer.SelectedIndexChanged += new System.EventHandler(this.tabControl_RGBViewer_SelectedIndexChanged);
             // 
             // tabPage_RedMatrix
             // 
             this.tabPage_RedMatrix.Controls.Add(this.dataGridView_Red);
-            this.tabPage_RedMatrix.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_RedMatrix.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage_RedMatrix.Location = new System.Drawing.Point(4, 29);
             this.tabPage_RedMatrix.Name = "tabPage_RedMatrix";
-            this.tabPage_RedMatrix.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage_RedMatrix.Size = new System.Drawing.Size(433, 411);
+            this.tabPage_RedMatrix.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_RedMatrix.Size = new System.Drawing.Size(654, 639);
             this.tabPage_RedMatrix.TabIndex = 0;
             this.tabPage_RedMatrix.Text = "Red";
             this.tabPage_RedMatrix.UseVisualStyleBackColor = true;
@@ -643,32 +937,31 @@
             this.dataGridView_Red.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Red.ColumnHeadersVisible = false;
             this.dataGridView_Red.Cursor = System.Windows.Forms.Cursors.Arrow;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_Red.DefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridView_Red.Location = new System.Drawing.Point(4, 4);
-            this.dataGridView_Red.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_Red.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dataGridView_Red.Location = new System.Drawing.Point(6, 6);
             this.dataGridView_Red.Name = "dataGridView_Red";
             this.dataGridView_Red.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView_Red.RowHeadersVisible = false;
             this.dataGridView_Red.RowHeadersWidth = 62;
             this.dataGridView_Red.RowTemplate.Height = 28;
-            this.dataGridView_Red.Size = new System.Drawing.Size(425, 407);
+            this.dataGridView_Red.Size = new System.Drawing.Size(638, 626);
             this.dataGridView_Red.TabIndex = 40;
+            this.dataGridView_Red.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             // 
             // tabPage_GreenMatrix
             // 
             this.tabPage_GreenMatrix.Controls.Add(this.dataGridView_Green);
-            this.tabPage_GreenMatrix.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_GreenMatrix.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage_GreenMatrix.Location = new System.Drawing.Point(4, 29);
             this.tabPage_GreenMatrix.Name = "tabPage_GreenMatrix";
-            this.tabPage_GreenMatrix.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage_GreenMatrix.Size = new System.Drawing.Size(433, 411);
+            this.tabPage_GreenMatrix.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_GreenMatrix.Size = new System.Drawing.Size(654, 639);
             this.tabPage_GreenMatrix.TabIndex = 1;
             this.tabPage_GreenMatrix.Text = "Green";
             this.tabPage_GreenMatrix.UseVisualStyleBackColor = true;
@@ -685,31 +978,30 @@
             this.dataGridView_Green.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Green.ColumnHeadersVisible = false;
             this.dataGridView_Green.Cursor = System.Windows.Forms.Cursors.Arrow;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_Green.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridView_Green.Location = new System.Drawing.Point(5, 4);
-            this.dataGridView_Green.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_Green.DefaultCellStyle = dataGridViewCellStyle9;
+            this.dataGridView_Green.Location = new System.Drawing.Point(8, 6);
             this.dataGridView_Green.Name = "dataGridView_Green";
             this.dataGridView_Green.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView_Green.RowHeadersVisible = false;
             this.dataGridView_Green.RowHeadersWidth = 62;
             this.dataGridView_Green.RowTemplate.Height = 28;
-            this.dataGridView_Green.Size = new System.Drawing.Size(425, 407);
+            this.dataGridView_Green.Size = new System.Drawing.Size(638, 626);
             this.dataGridView_Green.TabIndex = 41;
+            this.dataGridView_Green.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
             // 
             // tabPage_BlueMatrix
             // 
             this.tabPage_BlueMatrix.Controls.Add(this.dataGridView_Blue);
-            this.tabPage_BlueMatrix.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_BlueMatrix.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage_BlueMatrix.Location = new System.Drawing.Point(4, 29);
             this.tabPage_BlueMatrix.Name = "tabPage_BlueMatrix";
-            this.tabPage_BlueMatrix.Size = new System.Drawing.Size(433, 411);
+            this.tabPage_BlueMatrix.Size = new System.Drawing.Size(654, 639);
             this.tabPage_BlueMatrix.TabIndex = 2;
             this.tabPage_BlueMatrix.Text = "Blue";
             this.tabPage_BlueMatrix.UseVisualStyleBackColor = true;
@@ -726,311 +1018,6 @@
             this.dataGridView_Blue.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Blue.ColumnHeadersVisible = false;
             this.dataGridView_Blue.Cursor = System.Windows.Forms.Cursors.Arrow;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView_Blue.DefaultCellStyle = dataGridViewCellStyle7;
-            this.dataGridView_Blue.Location = new System.Drawing.Point(5, 4);
-            this.dataGridView_Blue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridView_Blue.Name = "dataGridView_Blue";
-            this.dataGridView_Blue.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dataGridView_Blue.RowHeadersVisible = false;
-            this.dataGridView_Blue.RowHeadersWidth = 62;
-            this.dataGridView_Blue.RowTemplate.Height = 28;
-            this.dataGridView_Blue.Size = new System.Drawing.Size(425, 407);
-            this.dataGridView_Blue.TabIndex = 41;
-            // 
-            // tabControl_Main
-            // 
-            this.tabControl_Main.Controls.Add(this.tabPage_View);
-            this.tabControl_Main.Controls.Add(this.tabPage_Shading);
-            this.tabControl_Main.Controls.Add(this.tabPage_ColorSpacesConverter);
-            this.tabControl_Main.Location = new System.Drawing.Point(9, 8);
-            this.tabControl_Main.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabControl_Main.Name = "tabControl_Main";
-            this.tabControl_Main.SelectedIndex = 0;
-            this.tabControl_Main.Size = new System.Drawing.Size(618, 469);
-            this.tabControl_Main.TabIndex = 42;
-            // 
-            // tabPage_ColorSpacesConverter
-            // 
-            this.tabPage_ColorSpacesConverter.Controls.Add(this.groupBox2);
-            this.tabPage_ColorSpacesConverter.Controls.Add(this.tabControl1);
-            this.tabPage_ColorSpacesConverter.Location = new System.Drawing.Point(4, 22);
-            this.tabPage_ColorSpacesConverter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage_ColorSpacesConverter.Name = "tabPage_ColorSpacesConverter";
-            this.tabPage_ColorSpacesConverter.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage_ColorSpacesConverter.Size = new System.Drawing.Size(610, 443);
-            this.tabPage_ColorSpacesConverter.TabIndex = 3;
-            this.tabPage_ColorSpacesConverter.Text = "Преобразование";
-            this.tabPage_ColorSpacesConverter.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.panel1);
-            this.groupBox2.Controls.Add(this.numericUpDown1);
-            this.groupBox2.Controls.Add(this.numericUpDown2);
-            this.groupBox2.Controls.Add(this.numericUpDown3);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.panel2);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Location = new System.Drawing.Point(4, 4);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox2.Size = new System.Drawing.Size(141, 430);
-            this.groupBox2.TabIndex = 39;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Превью:";
-            // 
-            // panel1
-            // 
-            this.panel1.AllowDrop = true;
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(4, 223);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(133, 129);
-            this.panel1.TabIndex = 30;
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(61, 409);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(76, 20);
-            this.numericUpDown1.TabIndex = 38;
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Location = new System.Drawing.Point(61, 388);
-            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(76, 20);
-            this.numericUpDown2.TabIndex = 37;
-            // 
-            // numericUpDown3
-            // 
-            this.numericUpDown3.Location = new System.Drawing.Point(61, 367);
-            this.numericUpDown3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.numericUpDown3.Maximum = new decimal(new int[] {
-            255,
-            0,
-            0,
-            0});
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(76, 20);
-            this.numericUpDown3.TabIndex = 36;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(4, 410);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 13);
-            this.label6.TabIndex = 35;
-            this.label6.Text = "Синий:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 388);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 13);
-            this.label7.TabIndex = 34;
-            this.label7.Text = "Зеленый:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(4, 367);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(55, 13);
-            this.label9.TabIndex = 33;
-            this.label9.Text = "Красный:";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(4, 192);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(70, 20);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "Сохранить";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(4, 14);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(130, 13);
-            this.label10.TabIndex = 30;
-            this.label10.Text = "Исходное изображение:";
-            // 
-            // panel2
-            // 
-            this.panel2.AllowDrop = true;
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel2.Location = new System.Drawing.Point(4, 35);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(133, 129);
-            this.panel2.TabIndex = 29;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(4, 168);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(70, 20);
-            this.button2.TabIndex = 31;
-            this.button2.Text = "Найти";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Location = new System.Drawing.Point(161, 4);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(441, 437);
-            this.tabControl1.TabIndex = 41;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.dataGridView1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage2.Size = new System.Drawing.Size(433, 411);
-            this.tabPage2.TabIndex = 0;
-            this.tabPage2.Text = "Red";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.ColumnHeadersVisible = false;
-            this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGridView1.Location = new System.Drawing.Point(4, 4);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(425, 407);
-            this.dataGridView1.TabIndex = 40;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.dataGridView2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage3.Size = new System.Drawing.Size(433, 411);
-            this.tabPage3.TabIndex = 1;
-            this.tabPage3.Text = "Green";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.AllowUserToResizeColumns = false;
-            this.dataGridView2.AllowUserToResizeRows = false;
-            this.dataGridView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.ColumnHeadersVisible = false;
-            this.dataGridView2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle9;
-            this.dataGridView2.Location = new System.Drawing.Point(5, 4);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dataGridView2.RowHeadersVisible = false;
-            this.dataGridView2.RowHeadersWidth = 62;
-            this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(425, 407);
-            this.dataGridView2.TabIndex = 41;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.dataGridView3);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(433, 411);
-            this.tabPage4.TabIndex = 2;
-            this.tabPage4.Text = "Blue";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.AllowUserToAddRows = false;
-            this.dataGridView3.AllowUserToDeleteRows = false;
-            this.dataGridView3.AllowUserToResizeColumns = false;
-            this.dataGridView3.AllowUserToResizeRows = false;
-            this.dataGridView3.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView3.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.ColumnHeadersVisible = false;
-            this.dataGridView3.Cursor = System.Windows.Forms.Cursors.Arrow;
             dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -1038,32 +1025,232 @@
             dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView3.DefaultCellStyle = dataGridViewCellStyle10;
-            this.dataGridView3.Location = new System.Drawing.Point(5, 4);
-            this.dataGridView3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dataGridView3.RowHeadersVisible = false;
-            this.dataGridView3.RowHeadersWidth = 62;
-            this.dataGridView3.RowTemplate.Height = 28;
-            this.dataGridView3.Size = new System.Drawing.Size(425, 407);
-            this.dataGridView3.TabIndex = 41;
+            this.dataGridView_Blue.DefaultCellStyle = dataGridViewCellStyle10;
+            this.dataGridView_Blue.Location = new System.Drawing.Point(8, 6);
+            this.dataGridView_Blue.Name = "dataGridView_Blue";
+            this.dataGridView_Blue.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dataGridView_Blue.RowHeadersVisible = false;
+            this.dataGridView_Blue.RowHeadersWidth = 62;
+            this.dataGridView_Blue.RowTemplate.Height = 28;
+            this.dataGridView_Blue.Size = new System.Drawing.Size(638, 626);
+            this.dataGridView_Blue.TabIndex = 41;
+            this.dataGridView_Blue.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_CellClick);
+            // 
+            // tabControl_Main
+            // 
+            this.tabControl_Main.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl_Main.Controls.Add(this.tabPage_View);
+            this.tabControl_Main.Controls.Add(this.tabPage_Shading);
+            this.tabControl_Main.Controls.Add(this.tabPage_ColorSpacesConverter);
+            this.tabControl_Main.Controls.Add(this.tabPage_Filtration);
+            this.tabControl_Main.Location = new System.Drawing.Point(12, 9);
+            this.tabControl_Main.Name = "tabControl_Main";
+            this.tabControl_Main.SelectedIndex = 0;
+            this.tabControl_Main.Size = new System.Drawing.Size(931, 722);
+            this.tabControl_Main.TabIndex = 42;
+            // 
+            // tabPage_Filtration
+            // 
+            this.tabPage_Filtration.Controls.Add(this.groupBox4);
+            this.tabPage_Filtration.Controls.Add(this.tabControl_Filtration);
+            this.tabPage_Filtration.Location = new System.Drawing.Point(4, 29);
+            this.tabPage_Filtration.Name = "tabPage_Filtration";
+            this.tabPage_Filtration.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_Filtration.Size = new System.Drawing.Size(923, 689);
+            this.tabPage_Filtration.TabIndex = 5;
+            this.tabPage_Filtration.Text = "Фильтрация";
+            this.tabPage_Filtration.UseVisualStyleBackColor = true;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label12);
+            this.groupBox4.Controls.Add(this.numericUpDown_FilterSize);
+            this.groupBox4.Controls.Add(this.pictureBox_FilterChangedImage);
+            this.groupBox4.Controls.Add(this.pictureBox_FilterOriginalImage);
+            this.groupBox4.Controls.Add(this.button_FiltrationSaveImage);
+            this.groupBox4.Controls.Add(this.label11);
+            this.groupBox4.Controls.Add(this.button_FiltrationFindImage);
+            this.groupBox4.Controls.Add(this.button_UseFilter);
+            this.groupBox4.Location = new System.Drawing.Point(3, 8);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(230, 662);
+            this.groupBox4.TabIndex = 42;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Превью:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(6, 569);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(69, 20);
+            this.label12.TabIndex = 47;
+            this.label12.Text = "Размер:";
+            // 
+            // numericUpDown_FilterSize
+            // 
+            this.numericUpDown_FilterSize.Location = new System.Drawing.Point(81, 567);
+            this.numericUpDown_FilterSize.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown_FilterSize.Name = "numericUpDown_FilterSize";
+            this.numericUpDown_FilterSize.Size = new System.Drawing.Size(140, 26);
+            this.numericUpDown_FilterSize.TabIndex = 46;
+            this.numericUpDown_FilterSize.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown_FilterSize.ValueChanged += new System.EventHandler(this.numericUpDown_FilterSize_ValueChanged);
+            // 
+            // pictureBox_FilterChangedImage
+            // 
+            this.pictureBox_FilterChangedImage.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBox_FilterChangedImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox_FilterChangedImage.Location = new System.Drawing.Point(6, 345);
+            this.pictureBox_FilterChangedImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox_FilterChangedImage.Name = "pictureBox_FilterChangedImage";
+            this.pictureBox_FilterChangedImage.Size = new System.Drawing.Size(215, 215);
+            this.pictureBox_FilterChangedImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_FilterChangedImage.TabIndex = 45;
+            this.pictureBox_FilterChangedImage.TabStop = false;
+            // 
+            // pictureBox_FilterOriginalImage
+            // 
+            this.pictureBox_FilterOriginalImage.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBox_FilterOriginalImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox_FilterOriginalImage.Location = new System.Drawing.Point(6, 46);
+            this.pictureBox_FilterOriginalImage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox_FilterOriginalImage.Name = "pictureBox_FilterOriginalImage";
+            this.pictureBox_FilterOriginalImage.Size = new System.Drawing.Size(215, 215);
+            this.pictureBox_FilterOriginalImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_FilterOriginalImage.TabIndex = 44;
+            this.pictureBox_FilterOriginalImage.TabStop = false;
+            this.pictureBox_FilterOriginalImage.Click += new System.EventHandler(this.pictureBox_FilterOriginalImage_Click);
+            // 
+            // button_FiltrationSaveImage
+            // 
+            this.button_FiltrationSaveImage.Location = new System.Drawing.Point(6, 306);
+            this.button_FiltrationSaveImage.Name = "button_FiltrationSaveImage";
+            this.button_FiltrationSaveImage.Size = new System.Drawing.Size(105, 31);
+            this.button_FiltrationSaveImage.TabIndex = 43;
+            this.button_FiltrationSaveImage.Text = "Сохранить";
+            this.button_FiltrationSaveImage.UseVisualStyleBackColor = true;
+            this.button_FiltrationSaveImage.Click += new System.EventHandler(this.button_FiltrationSaveImage_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(6, 22);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(190, 20);
+            this.label11.TabIndex = 41;
+            this.label11.Text = "Исходное изображение:";
+            // 
+            // button_FiltrationFindImage
+            // 
+            this.button_FiltrationFindImage.Location = new System.Drawing.Point(6, 269);
+            this.button_FiltrationFindImage.Name = "button_FiltrationFindImage";
+            this.button_FiltrationFindImage.Size = new System.Drawing.Size(105, 31);
+            this.button_FiltrationFindImage.TabIndex = 42;
+            this.button_FiltrationFindImage.Text = "Найти";
+            this.button_FiltrationFindImage.UseVisualStyleBackColor = true;
+            this.button_FiltrationFindImage.Click += new System.EventHandler(this.button_FiltrationFindImage_Click);
+            // 
+            // button_UseFilter
+            // 
+            this.button_UseFilter.Location = new System.Drawing.Point(10, 622);
+            this.button_UseFilter.Name = "button_UseFilter";
+            this.button_UseFilter.Size = new System.Drawing.Size(211, 34);
+            this.button_UseFilter.TabIndex = 35;
+            this.button_UseFilter.Text = "Фитрация";
+            this.button_UseFilter.UseVisualStyleBackColor = true;
+            this.button_UseFilter.Click += new System.EventHandler(this.button_UseFilter_Click);
+            // 
+            // tabControl_Filtration
+            // 
+            this.tabControl_Filtration.Controls.Add(this.tabPage_MedianFilter);
+            this.tabControl_Filtration.Location = new System.Drawing.Point(239, 8);
+            this.tabControl_Filtration.Name = "tabControl_Filtration";
+            this.tabControl_Filtration.SelectedIndex = 0;
+            this.tabControl_Filtration.Size = new System.Drawing.Size(671, 672);
+            this.tabControl_Filtration.TabIndex = 43;
+            // 
+            // tabPage_MedianFilter
+            // 
+            this.tabPage_MedianFilter.Controls.Add(this.dataGridView_MedianFilterValues);
+            this.tabPage_MedianFilter.Location = new System.Drawing.Point(4, 29);
+            this.tabPage_MedianFilter.Name = "tabPage_MedianFilter";
+            this.tabPage_MedianFilter.Size = new System.Drawing.Size(663, 639);
+            this.tabPage_MedianFilter.TabIndex = 3;
+            this.tabPage_MedianFilter.Text = "Медианная";
+            this.tabPage_MedianFilter.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView_MedianFilterValues
+            // 
+            this.dataGridView_MedianFilterValues.AllowUserToAddRows = false;
+            this.dataGridView_MedianFilterValues.AllowUserToDeleteRows = false;
+            this.dataGridView_MedianFilterValues.AllowUserToResizeColumns = false;
+            this.dataGridView_MedianFilterValues.AllowUserToResizeRows = false;
+            this.dataGridView_MedianFilterValues.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridView_MedianFilterValues.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView_MedianFilterValues.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView_MedianFilterValues.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView_MedianFilterValues.ColumnHeadersVisible = false;
+            this.dataGridView_MedianFilterValues.Cursor = System.Windows.Forms.Cursors.Arrow;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_MedianFilterValues.DefaultCellStyle = dataGridViewCellStyle11;
+            this.dataGridView_MedianFilterValues.Location = new System.Drawing.Point(8, 6);
+            this.dataGridView_MedianFilterValues.Name = "dataGridView_MedianFilterValues";
+            this.dataGridView_MedianFilterValues.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dataGridView_MedianFilterValues.RowHeadersVisible = false;
+            this.dataGridView_MedianFilterValues.RowHeadersWidth = 62;
+            this.dataGridView_MedianFilterValues.RowTemplate.Height = 28;
+            this.dataGridView_MedianFilterValues.Size = new System.Drawing.Size(638, 626);
+            this.dataGridView_MedianFilterValues.TabIndex = 42;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(635, 486);
+            this.ClientSize = new System.Drawing.Size(952, 748);
             this.Controls.Add(this.tabControl_Main);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Обработка изображений Барковец Р. 10702221";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.tabPage_ColorSpacesConverter.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_YUVPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_OriginalRGBPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            this.tabControl_YUVMatrix.ResumeLayout(false);
+            this.tabPage_Y.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_YUV_Y)).EndInit();
+            this.tabPage_U.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_YUV_U)).EndInit();
+            this.tabPage_V.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_YUV_V)).EndInit();
             this.tabPage_Shading.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabControl_Shading.ResumeLayout(false);
             this.tabPage_WaveShading.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_WaveShading)).EndInit();
@@ -1074,11 +1261,13 @@
             this.tabPage_CityShading.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_CityShading)).EndInit();
             this.tabPage_View.ResumeLayout(false);
-            this.groupBox.ResumeLayout(false);
-            this.groupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Blue)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Green)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_Red)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ChangedRgbViewPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_OriginalRgbViewPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_RgbView_Blue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_RgbView_Green)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_RgbView_Red)).EndInit();
             this.tabControl_RGBViewer.ResumeLayout(false);
             this.tabPage_RedMatrix.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Red)).EndInit();
@@ -1087,19 +1276,15 @@
             this.tabPage_BlueMatrix.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Blue)).EndInit();
             this.tabControl_Main.ResumeLayout(false);
-            this.tabPage_ColorSpacesConverter.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.tabPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.tabPage_Filtration.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_FilterSize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_FilterChangedImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_FilterOriginalImage)).EndInit();
+            this.tabControl_Filtration.ResumeLayout(false);
+            this.tabPage_MedianFilter.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView_MedianFilterValues)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1107,16 +1292,29 @@
         #endregion
         private System.Windows.Forms.OpenFileDialog openFileDialog;
         private System.Windows.Forms.SaveFileDialog saveFileDialog;
+        private System.Windows.Forms.TabPage tabPage_ColorSpacesConverter;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button button_YUVSave;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button button_YUVFind;
+        private System.Windows.Forms.TabControl tabControl_YUVMatrix;
+        private System.Windows.Forms.TabPage tabPage_Y;
+        private System.Windows.Forms.DataGridView dataGridView_YUV_Y;
+        private System.Windows.Forms.TabPage tabPage_U;
+        private System.Windows.Forms.DataGridView dataGridView_YUV_U;
+        private System.Windows.Forms.TabPage tabPage_V;
+        private System.Windows.Forms.DataGridView dataGridView_YUV_V;
         private System.Windows.Forms.TabPage tabPage_Shading;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button_MakeShading;
         private System.Windows.Forms.ComboBox comboBox_BinarizationMethods;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel_ChangedImage_Shading;
-        private System.Windows.Forms.Button button_SaveImage_Shading;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Panel panel_InsertedImage_Shading;
-        private System.Windows.Forms.Button button_FindImage_Shading;
         private System.Windows.Forms.TabControl tabControl_Shading;
         private System.Windows.Forms.TabPage tabPage_WaveShading;
         private System.Windows.Forms.DataGridView dataGridView_WaveShading;
@@ -1127,18 +1325,6 @@
         private System.Windows.Forms.TabPage tabPage_CityShading;
         private System.Windows.Forms.DataGridView dataGridView_CityShading;
         private System.Windows.Forms.TabPage tabPage_View;
-        private System.Windows.Forms.GroupBox groupBox;
-        private System.Windows.Forms.Panel panel_Changed_View;
-        private System.Windows.Forms.NumericUpDown numericUpDown_Blue;
-        private System.Windows.Forms.NumericUpDown numericUpDown_Green;
-        private System.Windows.Forms.NumericUpDown numericUpDown_Red;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button_SaveImage_View;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel_InsertedImage;
-        private System.Windows.Forms.Button button_FindImage_View;
         private System.Windows.Forms.TabControl tabControl_RGBViewer;
         private System.Windows.Forms.TabPage tabPage_RedMatrix;
         private System.Windows.Forms.DataGridView dataGridView_Red;
@@ -1147,26 +1333,38 @@
         private System.Windows.Forms.TabPage tabPage_BlueMatrix;
         private System.Windows.Forms.DataGridView dataGridView_Blue;
         private System.Windows.Forms.TabControl tabControl_Main;
-        private System.Windows.Forms.TabPage tabPage_ColorSpacesConverter;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox_YUVPicture;
+        private System.Windows.Forms.PictureBox pictureBox_OriginalRGBPicture;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.PictureBox pictureBox_ChangedRgbViewPicture;
+        private System.Windows.Forms.PictureBox pictureBox_OriginalRgbViewPicture;
+        private System.Windows.Forms.NumericUpDown numericUpDown_RgbView_Blue;
+        private System.Windows.Forms.NumericUpDown numericUpDown_RgbView_Green;
+        private System.Windows.Forms.NumericUpDown numericUpDown_RgbView_Red;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button_RgbViewSavePicture;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button_RgbViewFindPicture;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.TabPage tabPage_Filtration;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.PictureBox pictureBox_FilterChangedImage;
+        private System.Windows.Forms.PictureBox pictureBox_FilterOriginalImage;
+        private System.Windows.Forms.Button button_FiltrationSaveImage;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button button_FiltrationFindImage;
+        private System.Windows.Forms.Button button_UseFilter;
+        private System.Windows.Forms.TabControl tabControl_Filtration;
+        private System.Windows.Forms.TabPage tabPage_MedianFilter;
+        private System.Windows.Forms.DataGridView dataGridView_MedianFilterValues;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.NumericUpDown numericUpDown_FilterSize;
     }
 }
 

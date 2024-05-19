@@ -4,7 +4,8 @@ using System.Threading.Tasks;
 
 namespace CGLab1
 {
-    internal class ShadingProvider
+    //replace to bmp extensions???
+    public class ShadingProvider
     {
         private bool[,] bmp;
         private int BitmapWidth => this.bmp.GetLength(1);
