@@ -25,5 +25,5 @@ namespace CGLab1
             };
             comboBox_BinarizationMethods.SelectedIndex = 0;
         }
-    }
+	}
 }

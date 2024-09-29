@@ -59,6 +59,12 @@
     <Compile Include="AddintionalForms\DataGridForm.Designer.cs">
       <DependentUpon>DataGridForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddintionalForms\MatrixPresenterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddintionalForms\MatrixPresenterForm.Designer.cs">
+      <DependentUpon>MatrixPresenterForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ColorSpacesEventHandler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,11 +87,17 @@
     </Compile>
     <Compile Include="RGBViewProvider.cs" />
     <Compile Include="Shadings\ShadingProvider.cs" />
+    <Compile Include="TexturingEventsHandlers.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <EmbeddedResource Include="AddintionalForms\3PictureDemo.resx">
       <DependentUpon>3PictureDemo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddintionalForms\DataGridForm.resx">
       <DependentUpon>DataGridForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddintionalForms\MatrixPresenterForm.resx">
+      <DependentUpon>MatrixPresenterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
