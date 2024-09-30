@@ -29,6 +29,7 @@ namespace CGLab1
 
 		private void OnOpenTextureImageButtonClick(object sender, EventArgs e)
 		{
+			MultiSelectableOpenFileDialog.Filter = "Image (*bmp)|*.bmp|All Files|*.*";
 			if (MultiSelectableOpenFileDialog.ShowDialog() == DialogResult.OK)
 			{
 				texturingImagesPropertiesDataGridView.Rows.Clear();
@@ -78,6 +79,44 @@ namespace CGLab1
 		{
 			FillMatrixes();
 			CreateDataGridRows();
+			CalculateDistances();
+		}
+
+		private void CalculateDistances()
+		{
+			int energyColumnIndex = texturingImagesPropertiesDataGridView.Columns["energyValueColumn"].Index;
+			int entropyColumnIndex = texturingImagesPropertiesDataGridView.Columns["entropyValueColumn"].Index;
+			int correlationColumnIndex = texturingImagesPropertiesDataGridView.Columns["correlationValueColumn"].Index;
+			int contrastColumnIndex = texturingImagesPropertiesDataGridView.Columns["contrastValueColumn"].Index;
+			int homogenColumnIndex = texturingImagesPropertiesDataGridView.Columns["homogenValueColumn"].Index;
+			int distanceColumnIndex = texturingImagesPropertiesDataGridView.Columns["distanceValueColumn"].Index;
+
+			(double energy, double entropy, double correlation, double contrast, double homogen) originalVectors = (
+			originalVectors.energy = (double)texturingImagesPropertiesDataGridView.Rows[0].Cells[energyColumnIndex].Value,
+			originalVectors.entropy = (double)texturingImagesPropertiesDataGridView.Rows[0].Cells[entropyColumnIndex].Value,
+			originalVectors.correlation = (double)texturingImagesPropertiesDataGridView.Rows[0].Cells[correlationColumnIndex].Value,
+			originalVectors.correlation = (double)texturingImagesPropertiesDataGridView.Rows[0].Cells[contrastColumnIndex].Value,
+			originalVectors.correlation = (double)texturingImagesPropertiesDataGridView.Rows[0].Cells[homogenColumnIndex].Value);
+
+			for (int i = 0; i < texturingImagesPropertiesDataGridView.RowCount; i++)
+			{
+				(double energy, double entropy, double correlation, double contrast, double homogen) comparativeVectors = (
+				(double)texturingImagesPropertiesDataGridView.Rows[i].Cells[energyColumnIndex].Value,
+				(double)texturingImagesPropertiesDataGridView.Rows[i].Cells[entropyColumnIndex].Value,
+				(double)texturingImagesPropertiesDataGridView.Rows[i].Cells[correlationColumnIndex].Value,
+				(double)texturingImagesPropertiesDataGridView.Rows[i].Cells[contrastColumnIndex].Value,
+				(double)texturingImagesPropertiesDataGridView.Rows[i].Cells[homogenColumnIndex].Value);
+
+
+				var sqEnDiff = Math.Pow(originalVectors.energy - comparativeVectors.energy, 2);
+				var sqEntDiff = Math.Pow(originalVectors.entropy - comparativeVectors.entropy, 2);
+				var sqCorDiff = Math.Pow(originalVectors.correlation - comparativeVectors.correlation, 2);
+				var sqContDiff = Math.Pow(originalVectors.contrast - comparativeVectors.contrast, 2);
+				var sqHomDiff = Math.Pow(originalVectors.homogen - comparativeVectors.homogen, 2);
+
+				var distance = Math.Sqrt(sqEnDiff + sqEntDiff + sqCorDiff + sqContDiff + sqHomDiff);
+				texturingImagesPropertiesDataGridView.Rows[i].Cells[distanceColumnIndex].Value = distance;
+			}
 		}
 
 		private void CreateDataGridRows()
@@ -92,7 +131,9 @@ namespace CGLab1
 					CreateButton(path),
 					CalculateEnergy(imagesNormalizedMatrixes[path]),
 					CalculateEntropy(imagesNormalizedMatrixes[path]),
-					CalculateCorrelation(imagesNormalizedMatrixes[path])
+					CalculateCorrelation(imagesNormalizedMatrixes[path]),
+					CalculateContrast(imagesNormalizedMatrixes[path]),
+					CalculateHomogene(imagesNormalizedMatrixes[path])
 					);
 			}
 		}
@@ -330,6 +371,62 @@ namespace CGLab1
 			return correlation;
 		}
 
+		private double CalculateHomogene(double[,] normalizedMatrix)
+		{
+			double homogen = 0.0;
+
+			int rows = normalizedMatrix.GetLength(0);
+			int cols = normalizedMatrix.GetLength(1);
+
+			for (int i = 0; i < rows; i++)
+			{
+				for (int j = 0; j < cols; j++)
+				{
+					homogen += normalizedMatrix[i, j] / (1+Math.Abs(i-j));
+				}
+			}
+
+			return homogen;
+		}
+
+		private double CalculateContrast(double[,] normalizedMatrix)
+		{
+			//double contrast = 0.0;
+			//int rows = normalizedMatrix.GetLength(0);
+			//int cols = normalizedMatrix.GetLength(1);
+
+			//for (int i = 0; i < rows; i++)
+			//{
+			//	for (int j = 0; j < cols; j++)
+			//	{
+			//		var diff = i - j;
+			//		contrast += diff * diff * normalizedMatrix[i, j];
+			//	}
+			//}
+
+			//return contrast;
+
+			int width = normalizedMatrix.GetLength(0);
+			int height = normalizedMatrix.GetLength(1);
+			double[] pixelValues = new double[width * height];
+
+			for (int i = 0; i < width; i++)
+			{
+				for (int j = 0; j < height; j++)
+				{
+					pixelValues[i * height + j] = normalizedMatrix[i, j];
+				}
+			}
+
+			double mean = pixelValues.Average();
+			double sumOfSquares = pixelValues.Select(val => (val - mean) * (val - mean)).Sum();
+			double contrast = Math.Sqrt(sumOfSquares / pixelValues.Length);
+
+			return contrast;
+
+		}
+
+
 		private void texturingImagesPropertiesDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
 		{
 			if (e.RowIndex >= 0) // row is not header
@@ -353,7 +450,7 @@ namespace CGLab1
 				else if (columnIndex == texturingImagesPropertiesDataGridView.Columns["showNormalizedMatrixColumn"].Index)
 				{
 					var values = imagesNormalizedMatrixes[path];
-					MatrixPresenterForm f = new MatrixPresenterForm(values);
+					MatrixPresenterForm f = new MatrixPresenterForm(values, sortedUniqueBrightnessValues[path]);
 					f.Show();
 				}
 			}

@@ -12,10 +12,10 @@ namespace CGLab1.AddintionalForms
 {
 	public partial class MatrixPresenterForm : Form
 	{
-		public MatrixPresenterForm(double[,] data)
+		public MatrixPresenterForm(double[,] data, byte[] uniqueValues)
 		{
 			InitializeComponent();
-			LoadData(data);
+			LoadData(data, uniqueValues);
 		}		
 		public MatrixPresenterForm(int[,] data, byte[] uniqueValues)
 		{
@@ -74,22 +74,29 @@ namespace CGLab1.AddintionalForms
 				}
 			}
 		}
-		private void LoadData(double [,] data)
+		private void LoadData(double [,] data, byte[] uniqueValues)
 		{
 			// Получаем размеры массива
 			int rows = data.GetLength(0);
 			int columns = data.GetLength(1);
 
 			// Устанавливаем количество строк и столбцов в DataGridView
-			dataGridView.RowCount = rows;
-			dataGridView.ColumnCount = columns;
+			dataGridView.RowCount = rows + 1;
+			dataGridView.ColumnCount = columns + 1;
+
+
+			for (int i = 0; i < uniqueValues.Length; i++)
+			{
+				dataGridView.Rows[0].Cells[i + 1].Value = uniqueValues[i];
+				dataGridView.Rows[i + 1].Cells[0].Value = uniqueValues[i];
+			}
 
 			// Заполняем DataGridView данными из массива
-			for (int i = 0; i < rows; i++)
+			for (int i = 1; i < dataGridView.RowCount; i++)
 			{
-				for (int j = 0; j < columns; j++)
+				for (int j = 1; j < dataGridView.ColumnCount; j++)
 				{
-					dataGridView.Rows[i].Cells[j].Value = data[i, j];
+					dataGridView.Rows[i].Cells[j].Value = data[i - 1, j - 1];
 				}
 			}
 		}
